@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- add favicon -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <title>Meine Webseite</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <!-- Im header wird der Kopf der Webseite angegeben.
+            Dies ist aber nur ein Struktur-Element. Damit der Header auch immer
+            ganz oben agezeigt wird, braucht es noch das richtige CSS dafür. -->
+            <h1>Webseite von ...</h1>
+        </header>
+
+        <nav>
+            <!-- Das Navigations-Element beinhaltet eine Liste von Links, mit
+            denen man auf Unterwebseiten kommt. 
+            Dieses Element wird oft in den Header gesetzt, kann aber auch auf
+            der linken oder rechten Seite verwendet werden. -->
+
+            <ul>
+                <li>
+                    <a href="./pages/hobbies.html">Hobbies</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Im Hauptelement der Webseite kommt der ganze Inhalt den wir
+            anzeigen möchten. Dieser ist meistens in Section-Elemente
+            unterteilt. -->
+
+            <section>
+                <!-- Dieses Element wird verwendet um einen Abschnitt auf der
+                Webseite vom Rest abzutrennen. Für Abschnitte in einem Text
+                verwendet man das p-Element. -->
+                <h2>Erster Abschnitt</h2>
+                <p>
+                    <!-- Mit dem p-Element Teilt man einen Text in Paragraphen
+                    ein. Das p-Element hat meistens nur noch Text, Links oder
+                    Bilder drin, sonst keine weiteren Elemente. -->
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    itaque eaque vel necessitatibus amet consectetur corrupti
+                    repudiandae ipsam aliquam sint.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    natus magni non cumque voluptatum similique ullam
+                    temporibus. Magni sequi sunt temporibus ab a nobis quo non,
+                    molestias sapiente dolorum repellendus obcaecati odit, dolor
+                    quae illo ratione, veniam autem id praesentium. Consectetur,
+                    totam asperiores expedita culpa doloribus nesciunt error
+                    architecto dolorum!
+                </p>
+            </section>
+
+            <section>
+                <h2>Abschnitt mit Text und Bild</h2>
+                <div class="text-and-img">
+                    <!-- Hier wird eine Klasse verwendet, die in CSS angibt wie das
+                    Element gestaltet werden soll. Es werden hier 2 Kinder-Elemente
+                    verwendet, damit wir den Effekt von einem Text neben einem Bild
+                    einfach hinbekommen können. -->
+                    <div class="text">
+                        Hier ist eine Beschreibung von dem Bild, oder einfach
+                        Text der dazu passen könnte.
+                    </div>
+                    <div class="image">
+                        <img src="/img/mountains.png" alt="" />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Hier kommt die Fusszeile der Webseite -->
+        </footer>
+    </body>
+</html>

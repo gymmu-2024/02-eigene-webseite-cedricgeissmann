@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Hier können Stiele für die ganze Webseite angegeben werden. */
+body {
+    margin: 0;
+}
+
+/* Hier werden 2 Elemente nebeneinander gepackt.
+   Mit `display: flex;` können wir angeben in welche Richtung alle Kinder von
+   einem Element ausgerichtet werden. Wählen wir `flex-direction: row`, dann
+   werden Sie alle mit gleich viel Platz in einer Reihe nebeneinander platziert.
+   Mit `flex-direction: column` werden Sie untereinander platziert. Das reicht
+   um die meisten Elemente gut zu platzieren.
+*/
+.text-and-img {
+    display: flex; /* Richtet die Elemnte in einer Zeile oder Reihe aus. */
+    flex-direction: row; /* In einer Reihe ausgerichtet. */
+    gap: 1rem; /* Abstand zwischen den Elementen.*/
+    align-items: center; /* Ausrichtung in der Mitte entlang der anderen Achse. */
+    justify-content: center; /* Ausrichtung in der Mitte entlang der Hauptachse */
+    margin: 1rem; /* Abstand auf allem Seiten. */
+}
+
+/* Diese Regel beschreibt wie Bilder in diesem Container dargestellt werden. */
+.text-and-img img {
+    border-radius: 2rem; /* Damit können die Ecken abgerundet werden. */
+    width: 100%; /* Braucht es damit das Bild im Container bleibt und nicht viel zu gross ist. */
+}
