@@ -1,5 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XrGgRtTk)
-# Grafiken mit SVG erstellen
+
+# Webseiten Projekt
 
 In diesem Projekt stellen Sie sich selber über eine Webseite dar.
 Die Webseite wird dann über Github-Pages automatisch veröffentlicht, und kann
@@ -15,6 +16,8 @@ Webseite neu gebaut. Das kann jeweils ein paar Minuten dauern, ist dann aber
 auch für andere über das Internet zugänglich. Um die eigene Webseite direkt zu
 sehen, gibt es eine schnellere Lösung, mehr dazu im Abschnitt
 [Entwicklungsumgebung aktivieren](#entwicklungsumgebung-aktivieren).
+
+## Config anpassen
 
 Damit auf der Webseite alles richtig dargestellt werden kann, muss die Datei
 `vite.config.js` leicht angepasst werden. Der Wert für `base` muss so angepasst
