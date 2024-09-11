@@ -3,6 +3,16 @@
 # Webseiten Projekt
 
 In diesem Projekt stellen Sie sich selber über eine Webseite dar.
+
+## Projekt einrichten
+
+Sie können diesem Video folgen um das ganze Projekt aufzusetzen.
+
+[![Projekt
+einrichten](https://img.youtube.com/vi/e_Hr8u-CLYY/0.jpg)](https://www.youtube.com/watch?v=e_Hr8u-CLYY)
+
+## Webseite veröffentlichen
+
 Die Webseite wird dann über Github-Pages automatisch veröffentlicht, und kann
 mit Freunden und Familie geteilt werden. Damit Github-Pages auch funktioniert,
 muss es zuerst aktiviert werden. Gehen Sie dafür auf Ihr Repository und dort
