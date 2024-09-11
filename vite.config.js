@@ -14,7 +14,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                pages: resolve(__dirname, 'pages/hobbies.html')
+                hobbies: resolve(__dirname, 'pages/hobbies.html')
             }
         }
     },

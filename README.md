@@ -33,6 +33,27 @@ Damit auf der Webseite alles richtig dargestellt werden kann, muss die Datei
 `vite.config.js` leicht angepasst werden. Der Wert für `base` muss so angepasst
 werden, das der Name des Repositories darin steht.
 
+### Zurück zur Hauptseite
+
+Wenn Sie auf Ihre Hauptseite verlinken möchten, dann müssen Sie dafür den Wert
+von `base` angeben. Also wenn Sie von einer Unterwebseite auf Ihre Hauptseite
+möchten, dann müssen Sie dort den Wert von `base` beim Attribut `href=...` angeben.
+
+### Weitere Unterseiten hinzufügen
+
+Um weitere Unterwebseiten hinzuzufügen, müssen diese in `vite.config.js`
+zusätzlich angegeben werden. Dafür können Sie den folgenden Block mit Ihrer
+neuen Unterwebseite erweitern. Einfach den Eintrag von `hobbies` kopieren und anpassen.
+
+```js
+rollupOptions: {
+    input: {
+        main: resolve(__dirname, 'index.html'),
+        hobbies: resolve(__dirname, 'pages/hobbies.html'),
+    }
+}
+```
+
 ## Entwicklungsumgebung aktivieren
 
 Damit wir eine Webseite korrekt anzeigen lassen können, und alle Bilder laden
