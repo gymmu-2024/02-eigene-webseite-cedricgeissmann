@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import FullReload from 'vite-plugin-full-reload'
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
+import { resolve } from 'path'
 
 export default defineConfig({
     plugins: [react(), svgr(), FullReload(['images/**/*.svg'])],
@@ -9,7 +10,13 @@ export default defineConfig({
         host: '0.0.0.0'
     },
     build: {
-        outDir: 'docs'
+        outDir: 'docs',
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                pages: resolve(__dirname, 'pages/hobbies.html')
+            }
+        }
     },
     test: {
         globals: true,
